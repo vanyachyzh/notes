@@ -34,6 +34,7 @@ new Vue ({
     }
 })
 
+
 new Vue ({
     el: '#notes2',
     data:{
