@@ -1,0 +1,217 @@
+// out: ../css/style.css
+
+body, html {
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+}
+
+@keyframes gradient {
+	0% {
+		background-position: 0% 50%;
+	}
+	50% {
+		background-position: 100% 50%;
+	}
+	100% {
+		background-position: 0% 50%;
+	}
+}
+
+
+.notes{
+    position: absolute;
+    background: linear-gradient(-45deg,  #e95427, #5fe6eb, rgb(77, 231, 72));
+    background-size: 400% 400%;
+	animation: gradient 15s ease infinite;
+    width: 300px;
+    height: 600px;
+    text-align: center;
+    border-radius: 20px;
+    overflow-y: scroll;
+    overflow-x: hidden;
+
+    &::-webkit-scrollbar {
+        width: 0;
+    }
+
+    hr{
+        width: 90%;
+        border: 0.2px solid black;
+        background-color: black;
+    }
+
+    .notes__input{
+        margin-top: 20px;
+        width: 275px;
+        height: 30px;
+        border-radius: 10px;
+        border: none;
+        outline: none;
+        padding-left: 10px;
+        box-sizing: border-box;
+
+    }
+    .notes__button-add{
+        position: absolute;
+        top: 22.5px;
+        right: 13px;
+        width: 27px;
+        height: 27px;
+        border: none;
+        border-radius: 100px;
+        background-color: white;
+    }
+
+    .notes__list{
+        list-style: none;
+        margin-left: 10px;
+        width: 280px;
+        padding: 0;
+
+
+        .notes__item{
+            // border: 1px solid rgb(167, 167, 167);
+            background-color: white;
+            box-sizing: border-box;
+            position: relative;
+            border-radius: 10px;
+            width: 280px;
+            font-size: 15px;
+            line-height: 15px;
+            padding: 7px 5px 0;
+            height:  30px;
+            text-align: justify;
+            margin-bottom: 10px;
+
+
+            .notes__button-remove{
+                width: 25px;
+                height: 25px;
+                box-sizing: border-box;
+                position: absolute;
+                right: 0;
+                top: 2px;
+                border: none;
+                border-radius: 100px;
+                background-color: white;
+            }
+        }
+    }
+    .notes__header-check{
+        // background-color: rgb(74, 189, 235);
+        box-sizing: border-box;
+        position: relative;
+        border-radius: 10px;
+        width: 280px;
+        font-size: 15px;
+        line-height: 15px;
+        padding: 7px 5px 0;
+        height:  30px;
+        text-align: justify;
+        margin-left: 10px;
+        padding-left: 5px;
+        font-weight: 100;
+        text-align: center;
+        opacity: 0.4;
+    }
+}
+
+
+.notes2{
+    position: absolute;
+    background: linear-gradient(90deg,  #32d523, #5fc3eb, rgb(238, 70, 238));
+    width: 300px;
+    height: 600px;
+    text-align: center;
+    border-radius: 20px;
+    overflow-y: scroll;
+    overflow-x: hidden;
+    background-size: 400% 400%;
+	animation: gradient 15s ease infinite;
+
+    &::-webkit-scrollbar {
+        width: 0;
+    }
+
+    hr{
+        width: 90%;
+        border: 0.2px solid black;
+        background-color: black;
+    }
+
+    .notes__input{
+        margin-top: 20px;
+        width: 275px;
+        height: 30px;
+        border-radius: 10px;
+        border: none;
+        outline: none;
+        padding-left: 10px;
+        box-sizing: border-box;
+
+    }
+    .notes__button-add{
+        position: absolute;
+        top: 22.5px;
+        right: 13px;
+        width: 27px;
+        height: 27px;
+        border: none;
+        border-radius: 100px;
+        background-color: white;
+    }
+
+    .notes__list{
+        list-style: none;
+        margin-left: 10px;
+        width: 280px;
+        padding: 0;
+
+
+        .notes__item{
+            // border: 1px solid rgb(167, 167, 167);
+            background-color: white;
+            box-sizing: border-box;
+            position: relative;
+            border-radius: 10px;
+            width: 280px;
+            font-size: 15px;
+            line-height: 15px;
+            padding: 7px 5px 0;
+            height:  30px;
+            text-align: justify;
+            margin-bottom: 10px;
+
+
+            .notes__button-remove{
+                width: 25px;
+                height: 25px;
+                box-sizing: border-box;
+                position: absolute;
+                right: 0;
+                top: 2px;
+                border: none;
+                border-radius: 100px;
+                background-color: white;
+            }
+        }
+    }
+    .notes__header-check{
+        // background-color: rgb(74, 189, 235);
+        box-sizing: border-box;
+        position: relative;
+        border-radius: 10px;
+        width: 280px;
+        font-size: 15px;
+        line-height: 15px;
+        padding: 7px 5px 0;
+        height:  30px;
+        text-align: justify;
+        margin-left: 10px;
+        padding-left: 5px;
+        font-weight: 100;
+        text-align: center;
+        opacity: 0.4;
+    }
+}

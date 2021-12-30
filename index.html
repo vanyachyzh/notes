@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Document</title>
+</head>
+<body>
+
+    
+    
+<div class="notes" id="notes">
+
+    <input 
+    type="text" 
+    class="notes__input" 
+    placeholder="Створити замітку"
+    v-on:keypress.enter='addNote'
+    v-bind:value='inputValue'>
+
+    <button 
+    class="notes__button-add"
+    v-bind:value="inputValue"
+    v-on:click='addNote'>
+    +
+    </button>
+
+    <ul 
+    class="notes__list"
+    v-if='notes.length!==0'>
+
+        <li 
+        class="notes__item" 
+        v-for='(note,i) in notes'>
+            {{note}}
+            
+            <button 
+            class="notes__button-remove"
+            v-on:click='removeNote(i)'>×</button>
+        </li>
+    </ul>
+    <h3 class="notes__header-check" v-else>додайте свою першу замітку</h3>
+</div>
+
+
+
+<div class="notes2" id="notes2">
+
+    <input 
+    type="text" 
+    class="notes__input" 
+    placeholder="Створити замітку"
+    v-on:keypress.enter='addNote'
+    v-bind:value='inputValue'>
+
+    <button 
+    class="notes__button-add"
+    v-bind:value="inputValue"
+    v-on:click='addNote'>
+    +
+    </button>
+
+    <ul 
+    class="notes__list"
+    v-if='notes.length!==0'>
+
+        <li 
+        class="notes__item" 
+        v-for='(note,i) in notes'>
+            {{note}}
+            
+            <button 
+            class="notes__button-remove"
+            v-on:click='removeNote(i)'>×</button>
+        </li>
+    </ul>
+    <h3 class="notes__header-check" v-else>додайте свою першу замітку</h3>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/vue@2.6.14/dist/vue.js"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="js/index.js"></script>
+</body>
+</html>

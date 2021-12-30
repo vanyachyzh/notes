@@ -1,0 +1,189 @@
+body,
+html {
+  margin: 0;
+  padding: 0;
+  font-family: sans-serif;
+}
+@keyframes gradient {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+.notes {
+  position: absolute;
+  background: linear-gradient(-45deg, #e95427, #5fe6eb, #4de748);
+  background-size: 400% 400%;
+  animation: gradient 15s ease infinite;
+  width: 300px;
+  height: 600px;
+  text-align: center;
+  border-radius: 20px;
+  overflow-y: scroll;
+  overflow-x: hidden;
+}
+.notes::-webkit-scrollbar {
+  width: 0;
+}
+.notes hr {
+  width: 90%;
+  border: 0.2px solid black;
+  background-color: black;
+}
+.notes .notes__input {
+  margin-top: 20px;
+  width: 275px;
+  height: 30px;
+  border-radius: 10px;
+  border: none;
+  outline: none;
+  padding-left: 10px;
+  box-sizing: border-box;
+}
+.notes .notes__button-add {
+  position: absolute;
+  top: 22.5px;
+  right: 13px;
+  width: 27px;
+  height: 27px;
+  border: none;
+  border-radius: 100px;
+  background-color: white;
+}
+.notes .notes__list {
+  list-style: none;
+  margin-left: 10px;
+  width: 280px;
+  padding: 0;
+}
+.notes .notes__list .notes__item {
+  background-color: white;
+  box-sizing: border-box;
+  position: relative;
+  border-radius: 10px;
+  width: 280px;
+  font-size: 15px;
+  line-height: 15px;
+  padding: 7px 5px 0;
+  height: 30px;
+  text-align: justify;
+  margin-bottom: 10px;
+}
+.notes .notes__list .notes__item .notes__button-remove {
+  width: 25px;
+  height: 25px;
+  box-sizing: border-box;
+  position: absolute;
+  right: 0;
+  top: 2px;
+  border: none;
+  border-radius: 100px;
+  background-color: white;
+}
+.notes .notes__header-check {
+  box-sizing: border-box;
+  position: relative;
+  border-radius: 10px;
+  width: 280px;
+  font-size: 15px;
+  line-height: 15px;
+  padding: 7px 5px 0;
+  height: 30px;
+  text-align: justify;
+  margin-left: 10px;
+  padding-left: 5px;
+  font-weight: 100;
+  text-align: center;
+  opacity: 0.4;
+}
+.notes2 {
+  position: absolute;
+  background: linear-gradient(90deg, #32d523, #5fc3eb, #ee46ee);
+  width: 300px;
+  height: 600px;
+  text-align: center;
+  border-radius: 20px;
+  overflow-y: scroll;
+  overflow-x: hidden;
+  background-size: 400% 400%;
+  animation: gradient 15s ease infinite;
+}
+.notes2::-webkit-scrollbar {
+  width: 0;
+}
+.notes2 hr {
+  width: 90%;
+  border: 0.2px solid black;
+  background-color: black;
+}
+.notes2 .notes__input {
+  margin-top: 20px;
+  width: 275px;
+  height: 30px;
+  border-radius: 10px;
+  border: none;
+  outline: none;
+  padding-left: 10px;
+  box-sizing: border-box;
+}
+.notes2 .notes__button-add {
+  position: absolute;
+  top: 22.5px;
+  right: 13px;
+  width: 27px;
+  height: 27px;
+  border: none;
+  border-radius: 100px;
+  background-color: white;
+}
+.notes2 .notes__list {
+  list-style: none;
+  margin-left: 10px;
+  width: 280px;
+  padding: 0;
+}
+.notes2 .notes__list .notes__item {
+  background-color: white;
+  box-sizing: border-box;
+  position: relative;
+  border-radius: 10px;
+  width: 280px;
+  font-size: 15px;
+  line-height: 15px;
+  padding: 7px 5px 0;
+  height: 30px;
+  text-align: justify;
+  margin-bottom: 10px;
+}
+.notes2 .notes__list .notes__item .notes__button-remove {
+  width: 25px;
+  height: 25px;
+  box-sizing: border-box;
+  position: absolute;
+  right: 0;
+  top: 2px;
+  border: none;
+  border-radius: 100px;
+  background-color: white;
+}
+.notes2 .notes__header-check {
+  box-sizing: border-box;
+  position: relative;
+  border-radius: 10px;
+  width: 280px;
+  font-size: 15px;
+  line-height: 15px;
+  padding: 7px 5px 0;
+  height: 30px;
+  text-align: justify;
+  margin-left: 10px;
+  padding-left: 5px;
+  font-weight: 100;
+  text-align: center;
+  opacity: 0.4;
+}
